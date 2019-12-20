@@ -10,21 +10,21 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-          Sản phẩm
+          Products
         </a>
         <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
         <div class="dropdown-menu dropdown-menu-left animate slideIn" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="/iphone-quoc-te">iPhone</a>
           <a class="dropdown-item" href="/dien-thoai-android">Android</a>
-          <a class="dropdown-item" href="/may-tinh-bang">Máy tính bảng</a>
-          <a class="dropdown-item" href="/dong-ho">Đồng hồ</a>
-          <a class="dropdown-item" href="/phu-kien">Phụ kiện</a>
-          <a class="dropdown-item" href="/loa-va-tai-nghe">Loa & Tai nghe</a>
+          <a class="dropdown-item" href="/may-tinh-bang">Tablet</a>
+          <a class="dropdown-item" href="/dong-ho">Watch</a>
+          <a class="dropdown-item" href="/phu-kien">Accessories</a>
+          <a class="dropdown-item" href="/loa-va-tai-nghe">Speaker</a>
         </div>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="/tin-tuc"></i> Tin tức</a>
+        <a class="nav-link" href="/tin-tuc"></i> News</a>
       </li>
     </ul>
 
@@ -34,7 +34,7 @@
         <a class="nav-link" href="/shop/shopping-cart/">
           <i class="fa fa-shopping-cart">
           </i>
-          Giỏ Hàng
+          Cart
           <span class="badge badge-info">{{session.cart.totalQty}}</span>
         </a>
 
@@ -43,16 +43,16 @@
       <li class="nav-item">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-          Quản lý
+          Management
         </a>
         <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
           {{#if login }}
-          <a href="/user/profile" class="btn" role="button">Tài khoản</a>
+          <a href="/user/profile" class="btn" role="button">Account</a>
       <li role="separator" class="divider"></li>
-      <a href="/user/logout" class="btn" role="button">Đăng xuất</a>
+      <a href="/user/logout" class="btn btn-danger" role="button">Log out</a>
       {{else}}
-      <a href="/user/signup" class="btn" role="button">Đăng ký</a>
-      <a href="/user/signin" class="btn" role="button">Đăng nhập</a>
+      <a href="/user/signup" class="btn" role="button">Sign up</a>
+      <a href="/user/signin" class="btn" role="button">Sign in</a>
       {{/if}}
   </div>
   </li>
